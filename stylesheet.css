@@ -969,13 +969,27 @@ h2.white_circle:after {
 }
 .copyright-text {
 	line-height: 24px;
-	margin: 35px 0 0;
-	padding-left: 30px;
-	padding-right: 30px;
+	padding: 35px;
 }
 .copyright-text a {
 	color: #fff;
 }
+.text {
+	line-height: 24px;
+	padding: 35px;
+}
+.text a {
+	color: #fff;
+}
+
+.error-text {
+	line-height: 24px;
+	padding: 35px;
+}
+.error-text a {
+	color: #fff;
+}
+
 .error_message {
 	float: left;
 	width: 100%;
@@ -2165,22 +2179,42 @@ a.readmore {
 	LOGIN PAGE
 ################################################################# */
 body.login, html {
-	width: 100%;
 	height: 100%;
+	margin: 0;
 }
 .full-container {
-	display: table;
 	height: 100%;
-	width: 100%;
-	float: left;
+	margin: 0;
 	position: relative;
-	padding: 70px 0;
 	background-size: cover;
 }
-.full-container > div {
-	display: table-cell;
-	vertical-align: middle;
+
+/*.full-container > div {*/
+/*	display: block;*/
+/*	vertical-align: middle;*/
+/*}*/
+
+.full-container .top-login{
+	display:block;
+	width: 100%;
+	height: auto;
 }
+.full-container .form-container{
+	width: 100%;
+	position: absolute;
+	top: 100px;
+	bottom: 100px;
+	left: 0;
+}
+
+.full-container .bottom-login{
+	width: 100%;
+	position: absolute;
+	height: auto;
+	bottom: 0;
+	left: 0;
+}
+
 .login-box {
 	float: none;
 	display: inline-block;
